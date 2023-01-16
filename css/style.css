@@ -93,6 +93,7 @@ input#taskTime[type="time"]::-webkit-calendar-picker-indicator {
   width: 90%;
   height: 60%;
   overflow: scroll;
+  margin-top: 10px;
 }
 
 .card-task {
