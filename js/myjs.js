@@ -54,6 +54,7 @@ const removeTask = () => {
   const remove = document.getElementById('note')
   for (let index = 0; index < remove.children.length; index++) {
     remove.children[index].onclick = function () {
+      remove.children[index - 1].classList.remove('fade-in')
       myTasks.splice(index, 1)
       remove.removeChild(remove.children[index])
       // localStorage.removeItem[index]
