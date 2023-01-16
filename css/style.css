@@ -1,0 +1,139 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Mansalva&display=swap");
+
+/* BACKGROUND IMAGE */
+body {
+  background-image: url("../img/tile.jpg");
+}
+
+/* HEADING */
+h1 {
+  font-family: "Mansalva", cursive;
+  color: rgb(0, 0, 0);
+  font-size: 80px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* FORM */
+form {
+  background-image: url("../img/formbg.jpg");
+  width: 40%;
+  margin: auto;
+  padding: 10px;
+}
+
+/* INPUT */
+.center {
+  margin: auto;
+}
+
+input {
+  margin: 10px;
+}
+
+#taskInfo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+label {
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 15px 0 0 10px;
+}
+
+/* DATE INPUT */
+input#taskDate[type="date"] {
+  position: relative;
+}
+
+input#taskDate[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* TIME INPUT */
+input#taskTime[type="time"] {
+  position: relative;
+}
+
+input#taskTime[type="time"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* NEW TASK DIV */
+#note {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+/* TASK BACKGROUND */
+.card-img {
+  width: 220px;
+  height: 300px;
+}
+
+/* TASK TEXT */
+.mainTask {
+  width: 90%;
+  height: 60%;
+  overflow: scroll;
+}
+
+.card-task {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: large;
+  margin-right: 5px;
+}
+
+/* TASK ANIMATION */
+.fade-in:last-child {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* TASK DATE */
+.bottom {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+/* REMOVE ICON */
+#newTask:hover .glyphicon {
+  opacity: 1;
+}
+
+.glyphicon {
+  opacity: 0;
+  position: sticky;
+  width: 180px;
+  margin-top: 10px;
+  cursor: pointer;
+}

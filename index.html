@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Board</title>
+    <!-- JAVASCRIPT -->
+    <script src="js/myjs.js"></script>
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADING -->
+    <header>
+      <h1 class="text-center">My Task Board</h1>
+    </header>
+    <!-- FORM -->
+    <main>
+      <form
+        id="myForm"
+        class="text-left was-validated"
+        action="javascript:addTask()"
+      >
+        <!-- INPUTS DIV -->
+        <div class="center d-flex flex-column form-outline w-50">
+          <div class="textArea">
+            <label class="form-label" for="taskInfo">Enter your task:</label>
+            <textarea
+              class="form-control"
+              id="taskInfo"
+              placeholder="Enter your task"
+              required
+            ></textarea>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">
+              Please enter your task information.
+            </div>
+          </div>
+          <div>
+            <label class="form-label" for="taskDate">Enter Finish Date:</label>
+            <input
+              class="form-control"
+              type="date"
+              id="taskDate"
+              min="2023-01-01"
+              required
+            />
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please choose a finish date.</div>
+          </div>
+          <div>
+            <label class="form-label" for="taskTime">Enter Finish Time:</label>
+            <input class="form-control" type="time" id="taskTime" required />
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please choose a finish time.</div>
+          </div>
+        </div>
+        <!-- BUTTON DIV -->
+        <div class="text-center">
+          <input class="btn btn-primary" type="submit" value="Add task" />
+          <input class="btn btn-primary" type="reset" />
+        </div>
+      </form>
+      <!-- NEW NOTE DIV -->
+      <div id="note" class="d-flex flex-row flex-wrap"></div>
+    </main>
+  </body>
+</html>
