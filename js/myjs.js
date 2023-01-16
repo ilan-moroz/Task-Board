@@ -1,12 +1,9 @@
 var myTasks = []
 
-// GET DATA FROM LOCAL STORAGE
-// const checkForData = () => {
-//   myTasks = JSON.parse(localStorage.getItem('tasksInfo'))
-//   console.log(myTasks)
-// }
-
-// checkForData()
+//RUN checkForData FUNCTION ON WINDOW LOAD
+window.onload = function () {
+  checkForData()
+}
 
 // GET INPUTS & MAKE OBJECT & PUSH TO ARRAY
 const addTask = () => {
@@ -19,14 +16,14 @@ const addTask = () => {
   tasks.time = document.getElementById('taskTime').value
   myTasks.push(tasks)
   makeTask()
-  // localSave()
+  localSave()
   document.getElementById('myForm').reset()
 }
 
 // SAVE TO LOCAL STORAGE
-// const localSave = () => {
-//   localStorage.setItem('tasksInfo', JSON.stringify(myTasks))
-// }
+const localSave = () => {
+  localStorage.setItem('tasksInfo', JSON.stringify(myTasks))
+}
 
 // ADD NEW TASK
 const makeTask = () => {
@@ -49,6 +46,12 @@ const makeTask = () => {
   document.getElementById('note').innerHTML = data
 }
 
+// GET DATA FROM LOCAL STORAGE
+const checkForData = () => {
+  myTasks = JSON.parse(localStorage.getItem('tasksInfo'))
+  makeTask()
+}
+
 // REMOVE TASK
 const removeTask = () => {
   const remove = document.getElementById('note')
@@ -59,7 +62,8 @@ const removeTask = () => {
       }
       myTasks.splice(index, 1)
       remove.removeChild(remove.children[index])
-      // localStorage.removeItem[index]
+      localStorage.removeItem[index]
+      localSave()
     }
   }
 }
