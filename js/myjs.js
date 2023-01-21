@@ -49,6 +49,7 @@ const makeTask = () => {
 // GET DATA FROM LOCAL STORAGE
 const checkForData = () => {
   myTasks = JSON.parse(localStorage.getItem('tasksInfo'))
+  if (!myTasks) myTasks = []
   makeTask()
 }
 
