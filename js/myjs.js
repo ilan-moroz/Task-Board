@@ -4,6 +4,7 @@ var myTasks = []
 window.onload = function () {
   checkForData()
 }
+
 // REMOVE ANIMATION AFTER PAGE RELOAD
 window.addEventListener('load', function () {
   if (myTasks.length > 1) {
