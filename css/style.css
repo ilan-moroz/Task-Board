@@ -45,7 +45,7 @@ label {
   margin: 15px 0 0 10px;
 }
 
-/* DATE INPUT */
+/*MAKE DATE INPUT CLICKABLE EVERYWHERE*/
 input#taskDate[type="date"] {
   position: relative;
 }
@@ -62,7 +62,7 @@ input#taskDate[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }
 
-/* TIME INPUT */
+/*MAKE TIME INPUT CLICKABLE EVERYWHERE*/
 input#taskTime[type="time"] {
   position: relative;
 }
@@ -83,6 +83,10 @@ input#taskTime[type="time"]::-webkit-calendar-picker-indicator {
 #note {
   margin-top: 20px;
   margin-left: 40px;
+}
+
+#newTask {
+  border: none;
 }
 
 /* TASK BACKGROUND */
