@@ -43,9 +43,9 @@ const makeTask = () => {
       <div class="mainTask">
         <p class="card-task">${item.name}</p>
       </div>
-        <div class="bottom">
-      <p class="card-text">${item.date}</p>
-      <p class="card-text"> ${item.time}</p>
+      <div class="bottom">
+        <p class="card-text">${item.date}</p>
+        <p class="card-text"> ${item.time}</p>
       </div>
     </div>
   </div>`
