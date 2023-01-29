@@ -68,12 +68,12 @@ const removeTask = (event) => {
     if (remove.children[index].contains(target)) {
       if (index != 0) {
         remove.children[index - 1].classList.remove('fade-in')
-        myTasks.splice(index, 1)
-        remove.removeChild(remove.children[index])
-        localStorage.removeItem[index]
-        localSave()
-        break
       }
+      myTasks.splice(index, 1)
+      remove.removeChild(remove.children[index])
+      localStorage.removeItem[index]
+      localSave()
+      break
     }
   }
 }
