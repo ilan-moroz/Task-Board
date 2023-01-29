@@ -31,18 +31,26 @@ form {
   margin: auto;
 }
 
-input {
-  margin: 10px;
+input[type="date"],
+input[type="time"],
+#taskInfo {
+  background: transparent;
+}
+.timeSelect {
+  margin-top: 18px;
 }
 
-#taskInfo {
-  margin-top: 10px;
-  margin-left: 10px;
+.dateSelect {
+  margin-top: 2px;
+}
+
+.textArea {
+  margin-top: 3px;
 }
 
 label {
   background-color: rgba(255, 255, 255, 0.7);
-  margin: 15px 0 0 10px;
+  margin: 5px 0;
 }
 
 /*MAKE DATE INPUT CLICKABLE EVERYWHERE*/
