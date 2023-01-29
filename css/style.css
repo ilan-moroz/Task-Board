@@ -36,12 +36,17 @@ input[type="time"],
 #taskInfo {
   background: transparent !important;
 }
-.timeSelect {
-  margin-top: 16px;
-}
 
 .textArea {
-  margin-top: 3px;
+  margin-top: 6px;
+}
+
+.dateSelect {
+  margin-top: 18px;
+}
+
+.timeSelect {
+  margin-top: 14px;
 }
 
 label {
