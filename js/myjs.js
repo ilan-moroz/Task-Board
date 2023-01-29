@@ -7,7 +7,7 @@ window.onload = function () {
 
 // REMOVE ANIMATION AFTER PAGE RELOAD
 window.addEventListener('load', function () {
-  if (myTasks.length > 1) {
+  if (myTasks.length >= 1) {
     document.querySelector('.fade-in:last-child').classList.remove('fade-in')
   }
 })
