@@ -34,14 +34,10 @@ form {
 input[type="date"],
 input[type="time"],
 #taskInfo {
-  background: transparent;
+  background: transparent !important;
 }
 .timeSelect {
-  margin-top: 18px;
-}
-
-.dateSelect {
-  margin-top: 2px;
+  margin-top: 16px;
 }
 
 .textArea {
