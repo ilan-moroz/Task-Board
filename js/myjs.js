@@ -39,7 +39,7 @@ const makeTask = () => {
     data += `<div id="newTask" class="fade-in card bg-transparent text-dark">
     <img src="img/notebg.png" class="card-img" alt="card-img-overlay">
     <div class="card-img-overlay ">
-      <span class="text-danger glyphicon glyphicon-remove d-flex justify-content-end" onclick="removeTask(event)"></span>
+      <span class="text-danger glyphicon glyphicon-remove" onclick="removeTask(event)"></span>
       <div class="mainTask">
         <p class="card-task">${item.name}</p>
       </div>
