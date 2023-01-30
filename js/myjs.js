@@ -1,3 +1,4 @@
+// NEW EMPTY ARRAY
 var myTasks = []
 
 //RUN checkForData FUNCTION ON WINDOW LOAD
